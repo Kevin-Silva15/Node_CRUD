@@ -1,0 +1,22 @@
+{{!-- aqui é, se for msgSuccess = true ele mostra a div de baixo --}}
+{{#if msgSuccess}}
+
+<div class="alert alert-success" role="alert">
+  Cadastrado com sucesso!
+</div>
+
+{{/if}}
+
+
+{{!-- Each - percorre uma array, se tiver algo, ela vai mostrar --}}
+{{#each error}}
+<div class="alert alert-danger" role="alert">
+  {{mensagem}}
+</div>
+{{/each}}
+
+
+
+
+
+
